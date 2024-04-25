@@ -35,3 +35,32 @@ const myFunction = function(){
 console.log( typeof bigNumber )
 
 //  https://262.ecma-international.org/5.1/#sec-11.4.3  (for documentation)
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myEmailname ="biswojitbejbhola"
+
+let anothername = myEmailname
+anothername = "biswojit"
+
+console.log(anothername)
+console.log(anothername)
+
+let user = {
+    email: "biswojitbejbhola@gmail..com",
+    upi: "7735347591@ybl"
+}
+
+let user2 = user
+
+user2.email = "biswojit@gmail.com"
+
+console.log(user.email)
+console.log(user2.email)
+
+// stack => copy into assign variable
+// Heap => reference into assign object
+
